@@ -151,6 +151,10 @@ var data = this.state;
                     return (
                       <Comment key={i}
                         author={comment.author}
+                        data ={comment}
+                        feedKey ={this.state._id}
+                        likeCounter={comment.likeCounter}
+                        index ={i}
                         postDate={comment.postDate}>
                         {comment.contents}
                       </Comment>
